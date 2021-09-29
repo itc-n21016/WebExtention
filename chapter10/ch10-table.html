@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <title>テーブル</title>
 <!-- 外部ファイルのch10-style.cssを読み込む -->
-
+<link rel="stylesheet" href="ch10-style.css">
 
 
 </head>
@@ -19,17 +19,20 @@
 <h3 class="main-style">基本的なテーブルのマークアップ</h3>
 <!-- P152 chapter7/c07-01-a/index.html -->
 <section id="ch10-1-a">
-
-
-宿泊施設6日7日8日
-
-グランドホテル○○×
-
-福龍旅館○○△
-
-ホテルパークサイド△××
-
-
+	<table>
+		<tr>
+			<th>宿泊施設</th><th>6日</th><th>7日</th><th>8日</th>
+		</tr>
+		<tr>
+			<td>グランドホテル</td><td>○</td><td>○</td><td>×</td>
+		</tr>
+		<tr>
+			<td>福龍旅館</td><td>○</td><td>○</td><td>△</td>
+		</tr>
+		<tr>
+			<td>ホテルパークサイド</td><td>△</td><td>×</td><td>×</td>
+		</tr>
+	</table>
 </section>
 
 <h3 class="main-style">最低限テーブルらしく見せるためのCSS</h3>
@@ -71,7 +74,7 @@
 	<td class="price">&yen;3,024-</td>
 </tr>
 <tr class="total">
-	<td>合計</td>
+	<td colspan="2">合計</td>
 	<td class="price">&yen;10,584-</td>
 </tr>
 </table>
@@ -83,9 +86,9 @@
 <section id="ch10-1-d">
 <table class="plan">
 <tr>
-	<th>プラン</th>
-	<th>内容</th>
-	<th>お食事</th>
+	<th rowspan="2">プラン</th>
+	<th rowspan="2">内容</th>
+	<th rowspan="3">お食事</th>
 </tr>
 <tr>
 	<th>朝</th>
@@ -112,7 +115,7 @@
 <!-- P160 chapter7/c07-02-a/index.html -->
 <section id="ch10-2-a">
 <table>
-	
+	<caption>ホテルの予約状況</caption>
 	<tr>
 		<th>宿泊施設</th><th>6日</th><th>7日</th><th>8日</th>
 	</tr>
@@ -135,28 +138,28 @@
 <table>
 	<caption>ホテルの予約状況</caption>
 	<tr>
-		<th>宿泊施設</th>
-		<th>6日</th>
-		<th>7日</th>
-		<th>8日</th>
+		<th id="row1">宿泊施設</th>
+		<th id="row2">6日</th>
+		<th id="row3">7日</th>
+		<th id="row4">8日</th>
 	</tr>
 	<tr>
-		<td>グランドホテル</td>
-		<td>○</td>
-		<td>○</td>
-		<td>×</td>
+		<td headers="row1">グランドホテル</td>
+		<td headers="row2">○</td>
+		<td headers="row3">○</td>
+		<td headers="row4">×</td>
 	</tr>
 	<tr>
-		<td>福龍旅館</td>
-		<td>○</td>
-		<td>○</td>
-		<td>△</td>
+		<td headers="row1">福龍旅館</td>
+		<td headers="row2">○</td>
+		<td headers="row3">○</td>
+		<td headers="row4">△</td>
 	</tr>
 	<tr>
-		<td>ホテルパークサイド</td>
-		<td>△</td>
-		<td>×</td>
-		<td>×</td>
+		<td headers="row1">ホテルパークサイド</td>
+		<td headers="row2">△</td>
+		<td headers="row3">×</td>
+		<td headers="row4">×</td>
 	</tr>
 </table>
 </section>
@@ -169,10 +172,10 @@
 <table>
 	<caption>ホテルの予約状況</caption>
 	<tr>
-		<th>宿泊施設</th>
-		<th>6日</th>
-		<th>7日</th>
-		<th>8日</th>
+		<th scope="col">宿泊施設</th>
+		<th scope="col">6日</th>
+		<th scope="col">7日</th>
+		<th scope="col">8日</th>
 	</tr>
 	<tr>
 		<td>グランドホテル</td>
@@ -234,7 +237,7 @@
 <h3 class="main-style">見出しに関連するセルを設定する</h3>
 <!-- P167-P168 chapter7/c07-03-b/index.html -->
 <section id="ch10-3-b">
-
+	<div class-"table-wrapper">
 	<table class="price">
 	<caption>講習料金</caption>
 	<tr>
@@ -262,7 +265,7 @@
 		<td>-</td>
 	</tr>
 	</table>
-
+	</div>
 </section>
 
 
