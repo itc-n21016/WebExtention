@@ -46,26 +46,26 @@ hr {
 /* P54 chapter4/c04-01-a */
 
 #ch07-1-a {
-
+	font-size: 16px;
 }
 
 #ch07-1-a div {
-
+	font-size: 0.8em;
 }
 
 
 /* P55 chapter4/c04-01-b */
 
 #ch07-1-b {
-
+	font-size: 14px;
 }
 
 #ch07-1-b h1 {
-
+	font-size: 20px;
 }
 
 #ch07-1-b h2 {
-
+	font-size: 16px;
 }
 
 
@@ -73,11 +73,11 @@ hr {
 /* htmlの文字サイズは16px程度 */
 
 #ch07-1-c h1 {
-
+	font-size: 1.4rem;	
 }
 
 #ch07-1-c h2 {
-
+	font-size: 1.14rem;
 }
 
 
@@ -85,7 +85,7 @@ hr {
 /* P58 chapter4/c04-02 */
 
 #ch07-2 {
-
+	line-height: 1.7;
 }
 
 /* 太字 */
@@ -96,7 +96,7 @@ hr {
 }
 
 #ch07-3 .lead {
-
+	font-weight: bold;
 }
 
 /* フォント */
@@ -104,18 +104,19 @@ hr {
 
 #ch07-4-a {
 	line-height: 1.7;
-
+	font-family: "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN", Meiryo, "MS Pゴシック", sans-serif;
 }
 
 #ch07-4-a .lead {
 	font-weight: bold;
+
 }
 
 /* P63 chapter4/c04-04-b */
 
 #ch07-4-b {
 	line-height: 1.7;
-
+	font-family: sans-serif;
 }
 
 #ch07-4-b .lead {
@@ -127,7 +128,7 @@ hr {
 
 #ch07-4-c {
 	line-height: 1.7;
-
+	font-family: 'Noto Sans Japanese', sans-serif;
 }
 
 #ch07-4-c .lead {
@@ -144,7 +145,7 @@ hr {
 }
 
 #ch07-5-a .headline {
-
+	text-align: center;
 }
 
 #ch07-5-a .lead {
@@ -159,7 +160,7 @@ hr {
 }
 
 #ch07-5-b p {
-
+	text-align: justify;
 }
 
 #ch07-5-b .headline {
@@ -190,7 +191,8 @@ hr {
 }
 
 #ch07-6 .note {
-
+	padding-left: 1em;
+	text-indent: -1em;
 }
 
 
@@ -198,13 +200,13 @@ hr {
 /* P73 chapter4/c04-07-a */
 
 #ch07-7-a {
-
+	color: #002a5a;
 }
 
 /* P75 chapter4/c04-07-b */
 
 #ch07-7-b {
-
+	color: rgba(0, 42, 90, 0.5);
 }
 
 /* P76 chapter4/c04-07-c */
@@ -214,7 +216,7 @@ hr {
 }
 
 #ch07-7-c .important {
-
+	color: #ff0000;
 }
 
 
@@ -222,8 +224,11 @@ hr {
 /* P79 chapter4/c04-08 */
 
 #ch07-8 h1 {
-
+	font-size: 1.5em;
+	line-height: 1.2em;
+	text-align: center;
 }
 #ch07-8 h1 .subtitle {
-	
+	font-size: 0.7em;
+	font-weight: normal;
 }
