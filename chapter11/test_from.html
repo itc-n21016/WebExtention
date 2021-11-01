@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input,
+        textarea {
+            box-sizing: border-box;
+        }
+
+        textarea {
+            margin: 0.5em 0;
+            border: 1px solid #ccc;
+            padding: 0.75em;
+            width: 100%;
+            height: 12em;
+            font-size: 16px;
+            color: #999;
+        }
+    </style>
+</head>
+
+<body>
+    <from action="#">
+        <p class="label-p">時刻の設定</p>
+        <!-- ラジオボタン　-->
+        <ul class="input-group">
+            <li>
+                <input type="radio" name="duration" id="r1" value="1" checked><label for="r1">いますぐ出発</label>
+            </li>
+            <li>
+                <input type="radio" name="duration" id="r2" value="2"><label for="r2">出発時刻</label>
+            </li>
+            <li>
+                <input type="radio" name="duration" id="r3" value="3"><label for="r3">到着時刻</label>
+            </li>
+        </ul>
+        <ul class="input-group">
+            <li>
+                <input type="checkbox" name="option" id="c1" value="1" checkd><label for="c1">特急を優先</label>
+            </li>
+            <li>
+                <input type="checkbox" name="option" id="c2" value="2"><label for="c2">新幹線を優先</label>
+            </li>
+            <li>
+                <input type="checkbox" name="option" id="c3" value="3"><label for="c3">バスがあれば利用</label>
+            </li>
+        </ul>
+
+        <p>
+            <label for="month">有効期限</label><br>
+            <select name="month" id="month">
+                <option value="" selected>月</option>
+                <option value="01">01</option>
+                <option value="02">02</option>
+                <option value="03">03</option>
+                <option value="04">04</option>
+                <option value="05">05</option>
+                <option value="06">06</option>
+                <option value="07">07</option>
+                <option value="08">08</option>
+                <option value="09">09</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+            </select>
+            /
+            <select mame="year" id="year">
+                <option value="" selected>年</option>
+                <option value="2015">2015</option>
+                <option value="2016">2016</option>
+                <option value="2017">2017</option>
+                <option value="2018">2018</option>
+                <option value="2019">2019</option>
+                <option value="2020">2020</option>
+            </select>
+        </p>
+
+    </from>
+</body>
+
+</html>
