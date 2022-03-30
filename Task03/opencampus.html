@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../Task03/css/main.css">
+    <title>専門学校ITカレッジ沖縄</title>
+</head>
+
+
+<body>
+    <header id="header">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="https://www.it-college.ac.jp/"><img class="logo-main img-fluid"
+                        src="img/logo.png" alt="専門学校ITカレッジ沖縄"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html"><i class="bi bi-house"></i>Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="it-specialist.html"><i
+                                    class="bi bi-caret-right"></i>ITスペシャリスト科</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="cyber-security.html"><i
+                                    class="bi bi-caret-right"></i>サイバーセキュリティ科</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="opencampus.html"><i
+                                    class="bi bi-caret-right"></i>オープンキャンパス申込</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <div class="row mt-5 mb-5">
+                <div class="col-lg-12">
+                    <h2 class="page-title text-aikare"><i class="bi bi-square-fill"></i>オープンキャンパス申込</h2>
+                </div>
+                <div class="col-lg-12">
+                    <img src="img/slider-opencampus.jpg" class="img-fluid page-img" alt="オープンキャンパス申込">
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <form action="">
+                <div class="row pt-3 pb-3">
+                    <div class="col-lg-2">
+                        <label for="exampleinputDate" class="form-label">参加希望日</label>
+                    </div>
+                    <div class="col-lg-10">
+                        <input type="date" class="form-control" id="exampleinputDate">
+                    </div>
+                </div>
+
+                <div class="row pt-3 pb-3">
+                    <div class="col-lg-2">
+                        氏名
+                    </div>
+                    <div class="col-lg-5">
+                        <label for="exampleinputName1" class="form-label">姓</label>
+                        <input type="text" class="form-control" id="exampleinputName1" placeholder="山田">
+                    </div>
+                    <div class="col-lg-5">
+                        <label for="exampleinputName2" class="form-label">名</label>
+                        <input type="text" class="form-control" id="exampleinputName2" placeholder="太郎">
+                    </div>
+                </div>
+
+                <div class="row pt-3 pb-3">
+                    <div class="col-lg-2">
+                        <label for="exampleinputEmail" class="form-label">メール</label>
+                    </div>
+                    <div class="col-lg-10">
+                        <input type="email" class="form-control" id="exampleinputEmail" aria-describedby="emailHelp">
+                        <div id="emailHelp" class="form-text">
+                            ※受信拒否や迷惑メール等の設定を行っている場合、お手数ですがドメイン「it-college.ac.jp」を受信できるようお願いいたします。</div>
+                    </div>
+                </div>
+
+                <div class="row pt-3 pb-3">
+                    <div class="col-lg-2">
+                        希望学科
+                    </div>
+                    <div class="col-lg-10">
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleinput-it-specialist"
+                                value="it-specialist">
+                            <label for="exampleinput-it-specialist" class="form-check-label">ITスペシャリスト科</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleinput-cyber-security"
+                                value="cyber-security">
+                            <label for="exampleinput-cyber-security" class="form-check-label">サイバーセキュリティ科</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleinput-game-creator"
+                                value="game-creator">
+                            <label for="exampleinput-game-creator" class="form-check-label">ゲームクリエイター科</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleinput-night-it" value="night-it">
+                            <label for="exampleinput-night-it" class="form-check-label">夜間ITエンジニア科</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row pt-3 pb-3">
+                    <div class="d-grid col-lg-2 mx-auto">
+                        <button class="btn btn-primary" type="submit">予約</button>
+                    </div>
+                </div>
+        </div>
+        </div>
+        </form>
+        </div>
+    </main>
+    <footer class="mt-5 pt-3 pb-2 bg-secondary">
+        <div class="container">
+            <p class="float-end">
+                <a href="#header" class="link-light text-decoration-none">Back to top <i
+                        class="bibi-arrow-up-square-fill"></i></a>
+            </p>
+            <p>
+                <a href="https://www.it-college.ac.jp/" class="link-light text-decoration-none">Copyright &copy;2015IWT
+                    College Okinawa.All
+                    RightsReserved.</a>
+            </p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
