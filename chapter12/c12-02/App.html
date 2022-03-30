@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>いいねボタン</title>
+    <meta charset="UTF-8" />
+    <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.devalopment.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+</head>
+
+<body>
+
+    <div id="likeButtonContainer"></div>
+
+    <script type="text/babel">
+
+        const LikeButton = () => {
+            const [liked, setLiked] = React.useState(false)
+            const toggleLiked = () => setLiked(!liked)
+
+            return (
+                <button className="likeButton" onClick={toggleLiked}>
+                    {liked ? "いいね済" : "いいね前"}
+                </button>
+            )
+        }
+
+        const domContainer = document.querySelector("#likeButtonContainer")
+        ReactDOM.render(<LikeButton />, domContainer)
+    </script>
+</body>
+
+</html>
